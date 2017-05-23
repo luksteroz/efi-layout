@@ -1,0 +1,517 @@
+* {
+    box-sizing: border-box;
+
+    .container {
+        @media only screen and (max-width: 768px) {
+            width: 100% !important;
+        }
+    }
+    //zmiana szerokosci aby lepiej było widać na mobile
+    .visible {
+        visibility: visible !important;
+    }
+    //ukryty search- nie widac go ale zostawia miejsce
+    .header-top {
+        width: 100%;
+        height: 50px;
+        background-color: #13bbd2;
+        @media only screen and (min-width: 768px) {
+            height: 120px;
+        }
+    // zmiana wysokosci na mobile- pozniej tez zmiana line-height
+        .dropdown {
+            position: fixed;
+            font-size: 20px;
+            margin-left: 10px;
+            line-height: 50px;
+            opacity: 1;
+            z-index: 2;
+            @media only screen and (min-width: 768px) {
+                line-height: 120px;
+            }
+
+            a {
+                :hover {
+                    color: lightgrey;
+                }
+            }
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+
+            .logo {
+                border: 1px solid lightgrey;
+                width: 80px;
+                height: 80px;
+                margin: 0 2px 0 0;
+                border-radius: 5px;
+                align-self: center;
+                cursor: pointer;
+                position: relative;
+
+                .logo-line {
+                    position: absolute;
+                    height: 24px;
+                    width: 3px;
+                    border: 3px solid white;
+                    right: 17px;
+                    bottom: 19px;
+                    border-bottom-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+                span {
+                    color: white;
+                    position: absolute;
+                    font-weight: bold;
+                    font-size: 18px;
+                    top: 16px;
+                    right: 13px;
+                }
+
+                h1 {
+                    display: block;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 44px;
+                    text-align: center;
+                    width: 80px;
+                }
+            }
+
+            .user-table {
+                height: 100%;
+                min-width: 30%;
+                display: flex;
+                align-items: center;
+
+                .glyphicon {
+                    margin-top: 15px;
+                    font-size: 24px;
+                    color: white;
+                    cursor: pointer;
+
+                    span {
+                        font-size: 10px;
+                    }
+                }
+
+                img {
+                    align-self: center;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                .text {
+                    margin-left: 30px;
+                    min-width: 300px;
+                    height: 100px;
+
+                    h2 {
+                        margin-top: 10px;
+                        font-size: 20px;
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                    .badge {
+                        position: relative;
+                        left: -12px;
+                        bottom: 18px;
+                        background-color: red;
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .menu {
+                width: 50%;
+                display: flex;
+                text-align: center;
+                height: 100%;
+
+                .glyphicon {
+                    margin-top: 36px;
+                    font-size: 30px;
+                    color: white;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    margin-top: 0;
+                    position: relative;
+
+                    :hover {
+                        background-color: black;
+                        :after {
+                            content: "";
+                            height: 10px;
+                            border: 10px solid black;
+                            border-radius: 100%;
+                            position: absolute;
+                            bottom: -31px;
+                            right: 28px;
+                        }
+                    }
+
+                    li {
+                        width: 82px;
+
+                        a {
+                            height: 100%;
+                            align-items: center;
+                            display: block;
+                            float: left;
+
+                            span {
+                                align-self: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #search {
+                width: 100%;
+                height: 30px;
+                display: flex;
+                align-self: center;
+                margin: 10px;
+                visibility: hidden;
+            }
+
+            .search {
+                .glyphicon-search {
+                    width: 20%;
+                    cursor: pointer;
+                    line-height: 50px;
+                    border: 0;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                    top: 0;
+                    background-color: inherit;
+                    font-size: 25px;
+                    margin-right: 5px;
+                    color: white;
+                    @media only screen and (min-width: 768px) {
+                        line-height: 120px;
+                    }
+                }
+            }
+
+            .glyphicon-off {
+                line-height: 50px;
+                cursor: pointer;
+                padding: 0;
+                border: 0;
+                margin: 0 10px 0 0;
+                top: 0;
+                background-color: inherit;
+                font-size: 25px;
+                color: red;
+                @media only screen and (min-width: 768px) {
+                    line-height: 120px;
+                }
+            }
+
+            .line-separate {
+                border-left: 1px solid lightgrey;
+                padding-left: 5px;
+                height: 30px;
+                margin-top: 10px;
+                @media only screen and (min-width: 768px) {
+                    height: 60px;
+                    margin-top: 30px;
+                }
+                //kreska
+            }
+        }
+    }
+
+    #chart {
+        padding: 0;
+        height: 500px;
+        width: 100%;
+        margin-bottom: 10px;
+        display: none;
+        @media only screen and (max-width: 1200px) {
+            display: none !important;
+        }
+        img {
+            width: 100%;
+            height: 350px;
+        }
+        //wykres img
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        background-color: #d8dada;
+        padding-top: 50px;
+
+        .finance {
+            @media only screen and (max-width: 992px) {
+                text-align: center;
+            }
+
+            .buttons-group {
+                text-align: right;
+                @media only screen and (max-width: 992px) {
+                    text-align: center;
+                }
+            }
+    // zmiana na center przy przejsciu na mobile- lepsza widoczność
+            .summary {
+                h1 {
+                    margin: 0;
+                    font-size: 50px;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: bolder;
+                    span{
+                        font-weight: normal;
+                    }
+                }
+
+                .account-toggle {
+                    margin-top: 50px;
+                    line-height: 34px;
+                    text-align: right;
+                    @media only screen and (max-width: 992px) {
+                        text-align: center;
+                    }
+                    align-self: center;
+
+                    .switch {
+                        align-items: center;
+                        margin-left: 10px;
+                        position: relative;
+                        display: inline-block;
+                        width: 90px;
+                        height: 38px;
+
+                        span {
+                            font-size: 16px;
+                            position: absolute;
+                            bottom: 0;
+                            font-weight: lighter;
+                        }
+
+                        .on {
+                            left: 52px;
+                        }
+
+                        .off {
+                            left: 9px;
+                        }
+
+                        .switch input {
+                            display: none;
+                        }
+
+                        .slider {
+                            position: absolute;
+                            content: "";
+                            cursor: pointer;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: lightgrey;
+                            -webkit-transition: 0.4s;
+                            transition: 0.4s;
+                        }
+
+                        .slider:before {
+                            position: absolute;
+                            content: "";
+                            height: 30px;
+                            width: 40px;
+                            left: 4px;
+                            bottom: 4px;
+                            background-color: #81E830;
+                            -webkit-transition: 0.4s;
+                            transition: 0.4s;
+                        }
+
+                        input:checked + .slider {
+                            background-color: white;
+                        }
+
+                        input:focus + .slider {
+                            box-shadow: 0 0 1px lightgrey;
+                        }
+
+                        input:checked + .slider:before {
+                            -webkit-transform: translateX(40px);
+                            -ms-transform: translateX(40px);
+                            transform: translateX(40px);
+                        }
+
+                        .slider.round {
+                            border-radius: 10px;
+                        }
+
+                        .slider.round:before {
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    // przycisk toggle w samym css
+        h4 {
+            display: block;
+        }
+
+        .products {
+            margin: 0 auto;
+
+            .list-group {
+                .active {
+                    background-color: #13bbd2;
+                    border-color: #13bbd2;
+                }
+
+                a {
+                    display: block;
+                    margin: 0 10px 10px 0;
+                    height: 80px;
+                    padding: 10px 0 0;
+
+                    .glyphicon {
+                        font-size: 38px;
+                        line-height: 60px;
+                        margin-left: 15px;
+                        float: left;
+                    }
+
+                    .badge {
+                        background-color: red;
+                        position: absolute;
+                        top: 15px;
+                        left: 38px;
+                    }
+
+                    p {
+                        display: block;
+                        margin-left: 70px;
+                    }
+
+                    .product-name {
+                        margin-bottom: 0;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+
+        .history {
+            margin: 0;
+
+            .list-group {
+                border-radius: 5px;
+                max-height: 370px;
+                overflow: auto;
+
+                a {
+                    height: 70px;
+                    border-radius: 4px;
+                    @media only screen and (max-width: 768px) {
+                        font-size: 10px;
+                    }
+
+                    .date {
+                        line-height: 48px;
+                        float: left;
+                    }
+
+                    .cost {
+                        float: right;
+                        text-align: right;
+                        font-weight: bold;
+                        line-height: 48px;
+                    }
+
+                    .details {
+                        padding-left: 20px;
+                        float: left;
+                        @media only screen and (max-width: 768px) {
+                            padding-left: 0;
+                        }
+
+                        p {
+                            margin: 0;
+
+                            .dropdown-menu {
+                                text-align: center;
+
+                                li {
+                                    :hover {
+                                        background-color: grey;
+                                    }
+                                }
+                            }
+
+                            button {
+                                border: 1px solid #13bbd2;
+                                border-radius: 4px;
+                                font-size: 12px;
+                                background-color: #13bbd2;
+                                color: white;
+                            }
+
+                            .glyphicon {
+                                color: lightblue;
+                                font-size: 12px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+}

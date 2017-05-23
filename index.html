@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Finance Life Stream</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <header class="header-top">
+        <nav class="dropdown visible-sm visible-xs">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            <ul class="dropdown-menu hamburger-menu">
+                <li><a class="text-uppercase" href="#">home</a></li>
+                <li><a class="text-uppercase" href="#">analyse</a></li>
+                <li><a class="text-uppercase" href="#">plan</a></li>
+                <li><a class="text-uppercase" href="#">earn</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a class="text-uppercase" href="#">your account</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="logo hidden-xs">
+                <h1>ef&nbsp;</h1>
+                <div class="logo-line"></div>
+                <span>3</span>
+            </div>
+            <div class="user-table hidden-xs">
+                <div class="avatar">
+                    <img src="images/avatar.png" alt="Your avatar">
+                </div>
+                <div class="text">
+                    <h2>Jan Kowalski</h2>
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <span class="badge">2</span>
+                    <span class="glyphicon glyphicon-cog"></span>
+                </div>
+            </div>
+            <nav class="menu hidden-sm hidden-xs">
+                <ul class="nav">
+                    <a href="#">
+                        <li class="glyphicon glyphicon-home text-uppercase">
+                            <span>home</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="glyphicon glyphicon-stats text-uppercase">
+                            <span>analyse</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="glyphicon glyphicon-calendar text-uppercase">
+                            <span>calendar</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="glyphicon glyphicon-usd text-uppercase">
+                            <span>earn</span>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <input type="text" id="search" placeholder="Search">
+            <div class="search">
+
+                <div>
+                    <span class="glyphicon glyphicon-search text-center"></span>
+
+                </div>
+            </div>
+            <div class="line-separate">
+            </div>
+            <div class="log">
+                <span class="glyphicon glyphicon-off"></span>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="finance">
+                <header>
+                    <div class="summary col-md-9">
+                        <h1>Finance Life Stream</h1>
+                    </div>
+                    <div class="buttons-group col-md-3">
+                        <span>Add</span>
+                        <button type="button" class="btn btn-info text-uppercase">bank</button>
+                        <button type="button" class="btn btn-info text-uppercase">payment</button>
+                    </div>
+                </header>
+                <div class="summary col-md-12">
+
+                    <div class="col-md-2">
+                        <h3>Balance</h3>
+                        <p>7 200,34 <span>PLN</span></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Available funds</h3>
+                        <p>7 200,34 <span>PLN</span> </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Sheduled payments</h3>
+                        <p>2 200,34 <span>PLN</span></p>
+                    </div>
+                    <div class="col-md-4 account-toggle visible-lg">
+                        <span>Account analysis</span>
+                        <label class="switch">
+                          <input type="checkbox">
+                          <div class="slider">
+                                <span class="on text-uppercase">on</span>
+                                <span class="off text-uppercase">off</span>
+                          </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="container" id="chart">
+                <img src="images/chart.png" alt="Finance Chart"/>
+            </section>
+            <section class="products col-md-6">
+                <h5>Products</h5>
+                <div class="list-group col-md-6">
+                    <a href="#" class="list-group-item">
+                        <span class="glyphicon glyphicon-credit-card"></span>
+                        <p class="product-name">Wallets [3]</p>
+                        <p>500,00 PLN</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="glyphicon glyphicon-briefcase"></span>
+                        <p class="product-name">Accounts</p>
+                        <p>7 200,00 PLN</p>
+                    </a>
+                    <a href="#" class="list-group-item active">
+                        <span class="glyphicon glyphicon-hand-right"></span>
+                        <p class="product-name">Bank loans</p>
+                        <p>- 127 000,00 PLN</p>
+                    </a>
+                </div>
+                <div class="list-group right col-md-6">
+                    <a href="#" class="list-group-item">
+                            <span class="glyphicon glyphicon-piggy-bank"></span>
+                            <span class="badge hidden-xs">2</span>
+                            <p class="product-name">Deposits [2]</p>
+                            <p>10 000,00 PLN</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                            <span class="glyphicon glyphicon-stats"></span>
+                            <span class="badge hidden-xs">7</span>
+                            <p class="product-name">Funds [3]</p>
+                            <p>7 000,00 PLN</p>
+                    </a>
+                </div>
+            </section>
+            <section class="history col-md-6">
+                <h5>History</h5>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <div class="date col-xs-1 visible-lg">
+                            <span>28.03</span>
+                        </div>
+                        <div class="details col-xs-8x">
+                            <p>
+                                Gas station Shell, Warsaw Woloska street..
+                            </p>
+                            <p>
+                                <span>Gas</span>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                <ul class="dropdown-menu details-history">
+                                    <li>Details..</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col-xs-3">
+                            <span class="cost hidden-xs" data-value="-100,00">-100 PLN</span>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="date col-xs-1 visible-lg">
+                            <span>29.06</span>
+                        </div>
+                        <div class="details col-xs-8">
+                            <p>
+                                ATM withdrawal Cracow Bracka Street...
+                            </p>
+                            <p>
+                                <span >Cost</span>
+                                <button type="button">OK</button>
+                            </p>
+                        </div>
+                        <div class="col-xs-3">
+                            <span class="cost hidden-xs" data-value="-50,00">-50,00 PLN</span>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="date col-xs-1 visible-lg">
+                            <span>19.06</span>
+                        </div>
+                        <div class="details col-xs-8">
+                            <p>
+                                Invoice 548/12/1234
+                            </p>
+                            <p>
+                                <span>Salary</span>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                <ul class="dropdown-menu details-history">
+                                    <li>Details..</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col-xs-3">
+                            <span class="cost hidden-xs" data-value="5550,00">5 550,00 PLN</span>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="date col-xs-1 visible-lg">
+                            <span>16.06</span>
+                        </div>
+                        <div class="details col-xs-8">
+                            <p>
+                                CofeeHeaven
+                            </p>
+                            <p>
+                                <span>Food</span>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                <ul class="dropdown-menu details-history">
+                                    <li>Details..</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col-xs-3">
+                            <span class="cost hidden-xs" data-value="-19,00">-19,00 PLN</span>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="date col-xs-1 visible-lg">
+                            <span>16.06</span>
+                        </div>
+                        <div class="details col-xs-8">
+                            <p>
+                                Cinema City Bemowo
+                            </p>
+                            <p>
+                                <span>Fun</span>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                <ul class="dropdown-menu details-history">
+                                    <li>Details..</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col-xs-3">
+                            <span class="cost hidden-xs" data-value="-40,70">-40,70 PLN</span>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="date col-xs-1 visible-lg">
+                            <span>10.06</span>
+                        </div>
+                        <div class="details col-xs-8">
+                            <p>
+                                Car Leasing Instalment
+                            </p>
+                            <p>
+                                <span>Cost</span>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                <ul class="dropdown-menu details-history">
+                                    <li>Details..</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col-xs-3">
+                            <span class="cost hidden-xs" data-value="-500,00">-500,00</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
