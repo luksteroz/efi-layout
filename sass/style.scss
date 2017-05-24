@@ -57,7 +57,7 @@
                     width: 3px;
                     border: 3px solid white;
                     right: 17px;
-                    bottom: 19px;
+                    bottom: 24px;
                     border-bottom-left-radius: 5px;
                     border-top-right-radius: 5px;
                 }
@@ -67,13 +67,15 @@
                     position: absolute;
                     font-weight: bold;
                     font-size: 18px;
-                    top: 16px;
+                    top: 11px;
                     right: 13px;
                 }
 
                 h1 {
                     display: block;
                     color: white;
+                    line-height: 78px;
+                    margin: 0;
                     font-weight: bold;
                     font-size: 44px;
                     text-align: center;
@@ -279,7 +281,9 @@
                     margin: 0;
                     font-size: 50px;
                 }
-
+                h3{
+                    font-weight: 500;
+                }
                 p {
                     font-size: 20px;
                     font-weight: bolder;
