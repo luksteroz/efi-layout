@@ -21,8 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonMenu.addEventListener("click", function () {
         event.preventDefault();
         dropMenu.classList.toggle("open");
-        this.parentElement.nextElementSibling.classList.toggle("open");
-        console.log(this.parentElement.nextElementSibling.classList);
+        this.parentElement.classList.toggle("open");
+        this.parentElement.parentElement.classList.toggle("open");
+
     });
 
 

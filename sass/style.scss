@@ -18,7 +18,7 @@
         @media only screen and (min-width: 768px) {
             height: 120px;
         }
-    // zmiana wysokosci na mobile- pozniej tez zmiana line-height
+        // zmiana wysokosci na mobile- pozniej tez zmiana line-height
         .dropdown {
             position: fixed;
             font-size: 20px;
@@ -138,6 +138,7 @@
                     margin-top: 36px;
                     font-size: 30px;
                     color: white;
+
                     span {
                         font-size: 14px;
                     }
@@ -151,6 +152,7 @@
 
                     :hover {
                         background-color: black;
+
                         :after {
                             content: "";
                             height: 10px;
@@ -158,7 +160,7 @@
                             border-radius: 100%;
                             position: absolute;
                             bottom: -31px;
-                            right: 28px;
+                            right: 29px;
                         }
                     }
 
@@ -246,6 +248,7 @@
         @media only screen and (max-width: 1200px) {
             display: none !important;
         }
+
         img {
             width: 100%;
             height: 350px;
@@ -270,7 +273,7 @@
                     text-align: center;
                 }
             }
-    // zmiana na center przy przejsciu na mobile- lepsza widoczność
+            // zmiana na center przy przejsciu na mobile- lepsza widoczność
             .summary {
                 h1 {
                     margin: 0;
@@ -280,7 +283,8 @@
                 p {
                     font-size: 20px;
                     font-weight: bolder;
-                    span{
+
+                    span {
                         font-weight: normal;
                     }
                 }
@@ -371,7 +375,7 @@
                 }
             }
         }
-    // przycisk toggle w samym css
+        // przycisk toggle w samym css
         h4 {
             display: block;
         }
@@ -484,34 +488,43 @@
             }
         }
     }
-::-webkit-scrollbar {
-  width: 9px;
-  height: 9px;
-}
-::-webkit-scrollbar-button {
-  display: none;
-}
-::-webkit-scrollbar-thumb {
-  background: #e1e1e1;
-  border: 0px none #ffffff;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
-}
-::-webkit-scrollbar-thumb:active {
-  background: #000000;
-}
-::-webkit-scrollbar-track {
-  border: 0px none #ffffff;
-  border-radius: 0px;
-}
-::-webkit-scrollbar-track:hover {
-  background: #666666;
-}
-::-webkit-scrollbar-track:active {
-  background: #333333;
-}
-::-webkit-scrollbar-corner {
-  background: transparent;
-}
+
+    ::-webkit-scrollbar {
+        width: 9px;
+        height: 9px;
+    }
+
+    ::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #e1e1e1;
+        border: 0 none #ffffff;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: #000000;
+    }
+
+    ::-webkit-scrollbar-track {
+        border: 0 none #ffffff;
+        border-radius: 0;
+    }
+
+    ::-webkit-scrollbar-track:hover {
+        background: #666666;
+    }
+
+    ::-webkit-scrollbar-track:active {
+        background: #333333;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
 }
