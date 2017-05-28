@@ -4910,7 +4910,7 @@ a.label:focus {
 .badge {
   display: inline-block;
   min-width: 10px;
-  padding: 3px 7px;
+  padding: 3px 6px;
   font-size: 12px;
   font-weight: bold;
   line-height: 1;
@@ -4918,7 +4918,7 @@ a.label:focus {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  background-color: #777;
+  background-color: #777b;
   border-radius: 10px;
 }
 .badge:empty {

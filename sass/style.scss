@@ -8,7 +8,7 @@
     }
     .container {
         @media only screen and (max-width: 768px) {
-            width: 100% !important;
+            width: 100%;
         }
     }
     //zmiana szerokosci aby lepiej było widać na mobile
@@ -62,7 +62,7 @@
                     width: 3px;
                     border: 3px solid white;
                     right: 17px;
-                    bottom: 24px;
+                    bottom: 22px;
                     border-bottom-left-radius: 5px;
                     border-top-right-radius: 5px;
                 }
@@ -120,7 +120,8 @@
 
                     h2 {
                         margin-top: 10px;
-                        font-size: 20px;
+                        font-size: 24px;
+                        font-weight: 300;
                         color: white;
                         cursor: pointer;
                     }
@@ -129,8 +130,9 @@
                         position: relative;
                         left: -12px;
                         bottom: 16px;
-                        background-color: red;
-                        font-size: 10px;
+                        background-color: #FF3591;
+                        font-size: 14px;
+                        padding: 1px 5px;
                     }
                 }
             }
@@ -157,7 +159,7 @@
                     margin-top: 0;
                     position: relative;
 
-                    .active {
+                    .active-menu {
                         background-color: black;
                         :after {
                             content: "";
@@ -192,8 +194,10 @@
                 height: 30px;
                 display: flex;
                 align-self: center;
-                margin: 10px;
+                margin: 20px;
                 visibility: hidden;
+                border:none;
+                border-radius:5px;
             }
 
             .search {
@@ -210,7 +214,7 @@
                     font-size: 25px;
                     margin-right: 5px;
                     color: white;
-                    @media only screen and (min-width: 768px) {
+                    @media (min-width: 768px) {
                         line-height: 120px;
                     }
                 }
@@ -247,8 +251,8 @@
     .fade-in {
         -webkit-animation-name: fadeIn;
         animation-name: fadeIn;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
         @-webkit-keyframes fadeIn {
@@ -311,9 +315,11 @@
                 .bank{
                     margin-right: 5px;
                 }
+
                 button {
                     width: 90px;
                 }
+
             }
             // zmiana na center przy przejsciu na mobile- lepsza widoczność
             .summary {
@@ -445,6 +451,7 @@
                     margin: 0 10px 10px 0;
                     height: 80px;
                     padding: 10px 0 0;
+                    border-radius: 4px;
 
                     .glyphicon {
                         color: rgba(128, 128, 128, 0.6);
@@ -455,7 +462,7 @@
                     }
 
                     .badge {
-                        background-color: red;
+                        background-color: #FF3591;
                         position: absolute;
                         top: 15px;
                         left: 38px;
@@ -531,6 +538,7 @@
                                 color: lightblue;
                                 font-size: 12px;
                                 cursor: pointer;
+                                font-weight: 700;
                             }
                         }
                     }
