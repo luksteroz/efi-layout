@@ -1,6 +1,11 @@
+// import bootstrapa
+// import /custom/variables.scss
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 * {
     box-sizing: border-box;
-
+    body{
+        font-family: 'Lato', sans-serif;
+    }
     .container {
         @media only screen and (max-width: 768px) {
             width: 100% !important;
@@ -42,7 +47,7 @@
             display: flex;
 
             .logo {
-                border: 1px solid lightgrey;
+                border: 1px solid RGBa(255,255,255, 0.5);
                 width: 80px;
                 height: 80px;
                 margin: 0 2px 0 0;
@@ -91,7 +96,7 @@
 
                 .glyphicon {
                     margin-top: 15px;
-                    font-size: 24px;
+                    font-size: 20px;
                     color: white;
                     cursor: pointer;
 
@@ -123,7 +128,7 @@
                     .badge {
                         position: relative;
                         left: -12px;
-                        bottom: 18px;
+                        bottom: 16px;
                         background-color: red;
                         font-size: 10px;
                     }
@@ -152,9 +157,8 @@
                     margin-top: 0;
                     position: relative;
 
-                    :hover {
+                    .active {
                         background-color: black;
-
                         :after {
                             content: "";
                             height: 10px;
@@ -217,7 +221,6 @@
                 cursor: pointer;
                 padding: 0;
                 border: 0;
-                margin: 0 10px 0 0;
                 top: 0;
                 background-color: inherit;
                 font-size: 25px;
@@ -302,7 +305,12 @@
                 @media only screen and (max-width: 992px) {
                     text-align: center;
                 }
-
+                span{
+                    padding-right: 10px;
+                }
+                .bank{
+                    margin-right: 5px;
+                }
                 button {
                     width: 90px;
                 }
@@ -312,18 +320,19 @@
                 h1 {
                     margin: 0;
                     font-size: 50px;
+                    font-weight: 400;
                 }
 
                 h3 {
-                    font-weight: 500;
+                    font-weight: 300;
                 }
 
                 p {
                     font-size: 20px;
-                    font-weight: bolder;
+                    font-weight: 700;
 
                     span {
-                        font-weight: normal;
+                        font-weight: 300;
                     }
                 }
 
@@ -371,9 +380,10 @@
                             left: 0;
                             right: 0;
                             bottom: 0;
-                            background-color: lightgrey;
+                            background-color: white;
                             -webkit-transition: 0.4s;
                             transition: 0.4s;
+                            border-radius: 2px;
                         }
 
                         .slider:before {
@@ -425,6 +435,9 @@
                 .active {
                     background-color: #13bbd2;
                     border-color: #13bbd2;
+                    .glyphicon-hand-right{
+                        color:white;
+                    }
                 }
 
                 a {
@@ -434,6 +447,7 @@
                     padding: 10px 0 0;
 
                     .glyphicon {
+                        color: rgba(128, 128, 128, 0.6);
                         font-size: 38px;
                         line-height: 60px;
                         margin-left: 15px;
@@ -464,13 +478,11 @@
             margin: 0;
 
             .list-group {
-                border-radius: 5px;
-                max-height: 370px;
+                border-radius: 6px;
+                max-height: 330px;
                 overflow: auto;
-
                 a {
-                    height: 70px;
-                    border-radius: 4px;
+                    height: 60px;
                     @media only screen and (max-width: 768px) {
                         font-size: 10px;
                     }
@@ -509,7 +521,7 @@
 
                             button {
                                 border: 1px solid #13bbd2;
-                                border-radius: 4px;
+                                border-radius: 2px;
                                 font-size: 12px;
                                 background-color: #13bbd2;
                                 color: white;
