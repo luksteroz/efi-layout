@@ -11,7 +11,7 @@ Funkcjonalność:
 - przycisk power klikalny (czerwony/biały),
 - przycisk search klikalny (pojawia się text input),
 - buttony klikalne z cieniami,
-- toggle button włącza wykres (lub nie),
+- toggle button włącza wykres,
 - animowany wykres,
 - "History" i "Products"- pointer i :hover,
 - w dziale "History" po kliknięciu w strzałkę wyświetla się "details",
