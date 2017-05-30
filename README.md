@@ -16,5 +16,4 @@ Funkcjonalność:
 - "History" i "Products"- pointer i :hover,
 - w dziale "History" po kliknięciu w strzałkę wyświetla się "details",
 
-Czcionka: Lato,
-Korzystając z bootstrapa wykorzystałem Glyphoicony(dlatego się różnią), grida, buttony, list group, badga.
+Czcionka: Lato. Z bootstrapa wykorzystałem Glyphoicony, grida, buttony, list group, badga.
