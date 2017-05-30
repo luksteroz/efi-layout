@@ -13,5 +13,8 @@ Funkcjonalność:
 - buttony klikalne z cieniami,
 - toggle button włącza wykres (lub nie),
 - animowany wykres,
-- "History" i "Products"- pointer i dodałem :hover,
-- w dziale "History" po kliknięciu w strzałkę wyświetla się "details"
+- "History" i "Products"- pointer i :hover,
+- w dziale "History" po kliknięciu w strzałkę wyświetla się "details",
+
+Czcionka: Lato
+Korzystając z bootstrapa wykorzystałem Glyphoicony(dlatego się różnią), grida, buttony, list group, badga.
