@@ -1,13 +1,15 @@
 // import bootstrapa
 // import /custom/variables.scss
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+$breakPointTablet: 768px;
 * {
     box-sizing: border-box;
     body{
         font-family: 'Lato', sans-serif;
     }
     .container {
-        @media only screen and (max-width: 768px) {
+        @media(max-width: $breakPointTablet) {
             width: 100%;
         }
     }
@@ -20,7 +22,7 @@
         width: 100%;
         height: 50px;
         background-color: #13bbd2;
-        @media only screen and (min-width: 768px) {
+        @media(min-width: 768px) {
             height: 120px;
         }
         // zmiana wysokosci na mobile- pozniej tez zmiana line-height
@@ -31,7 +33,7 @@
             line-height: 50px;
             opacity: 1;
             z-index: 2;
-            @media only screen and (min-width: 768px) {
+            @media(min-width: 768px) {
                 line-height: 120px;
             }
 
@@ -114,7 +116,7 @@
                 }
 
                 .text {
-                    margin-left: 30px;
+                    padding-left: 20px;
                     min-width: 300px;
                     height: 100px;
 
@@ -229,7 +231,7 @@
                 background-color: inherit;
                 font-size: 25px;
                 color: red;
-                @media only screen and (min-width: 768px) {
+                @media(min-width: 768px) {
                     line-height: 120px;
                 }
             }
@@ -239,7 +241,7 @@
                 padding-left: 5px;
                 height: 30px;
                 margin-top: 10px;
-                @media only screen and (min-width: 768px) {
+                @media(min-width: 768px) {
                     height: 60px;
                     margin-top: 30px;
                 }
@@ -281,7 +283,7 @@
         width: 100%;
         margin-bottom: 10px;
         display: none;
-        @media only screen and (max-width: 1200px) {
+        @media(max-width: 1200px) {
             display: none !important;
         }
 
@@ -300,14 +302,14 @@
         padding-top: 50px;
 
         .finance {
-            @media only screen and (max-width: 992px) {
+            @media(max-width: 992px) {
                 text-align: center;
             }
 
             .buttons-group {
-                text-align: right;
-                @media only screen and (max-width: 992px) {
-                    text-align: center;
+                text-align: center;
+                @media(min-width: 992px) {
+                    text-align: right;
                 }
                 span{
                     padding-right: 10px;
@@ -319,14 +321,13 @@
                 button {
                     width: 90px;
                 }
-
             }
             // zmiana na center przy przejsciu na mobile- lepsza widoczność
             .summary {
                 h1 {
                     margin: 0;
                     font-size: 50px;
-                    font-weight: 400;
+                    font-weight: 300;
                 }
 
                 h3 {
@@ -345,9 +346,9 @@
                 .account-toggle {
                     margin-top: 50px;
                     line-height: 34px;
-                    text-align: right;
-                    @media only screen and (max-width: 992px) {
-                        text-align: center;
+                    text-align: center;
+                    @media(min-width: 992px) {
+                        text-align: right;
                     }
                     align-self: center;
 
@@ -490,7 +491,7 @@
                 overflow: auto;
                 a {
                     height: 60px;
-                    @media only screen and (max-width: 768px) {
+                    @media(max-width: 768px) {
                         font-size: 10px;
                     }
 
@@ -509,7 +510,7 @@
                     .details {
                         padding-left: 20px;
                         float: left;
-                        @media only screen and (max-width: 768px) {
+                        @media(max-width: 768px) {
                             padding-left: 0;
                         }
 
